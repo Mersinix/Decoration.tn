@@ -1,0 +1,14 @@
+.Nav{
+  position: sticky;
+  top: 0px;
+  /* z-index: 1000; */
+    background-image:linear-gradient(
+        to left bottom,
+       
+        
+        #d8d58e,
+        #ebcd80,
+        #ffc478
+      );
+      color: black;
+}

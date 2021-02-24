@@ -1,0 +1,7 @@
+// export const GET_STORES = 'GET_STORES'
+export const STORE_LOADING = 'STORE_LOADING'
+export const LOGIN_STORE = 'LOGIN_STORE'
+export const REGISTER_STORE = 'REGISTER_STORE'
+export const LOGOUT_STORE = 'LOGOUT_STORE'
+export const STORE_ERRORS = 'STORE_ERRORS'
+export const GET_MYSTORES = 'GET_MYSTORES'

@@ -1,0 +1,47 @@
+.appall {
+    background-image: linear-gradient(
+      to left bottom,
+      #75cfb8,
+      #85d2b9,
+      #93d5bc,
+      #a0d8be,
+      #acdbc2,
+      #b1dcbd,
+      #b8ddb7,
+      #bfddb2,
+      #c9daa0,
+      #d8d58e,
+      #ebcd80,
+      #ffc478
+    );
+  }
+  .title {
+    padding-left: 30px;
+    background-image: linear-gradient(
+      to left bottom,
+      #75cfb8,
+      #85d2b9,
+      #93d5bc,
+      #a0d8be,
+      #acdbc2,
+      #b1dcbd,
+      #b8ddb7,
+      #bfddb2,
+      #c9daa0,
+      #d8d58e,
+      #ebcd80,
+      #ffc478
+    );
+  }
+  .card {
+    margin-top: 10px;
+  }
+  .block1 {
+    width: 400px;
+    height: 40px;
+  }
+  .feet {
+    display: flex;
+    flex-direction: row;
+  }
+  
