@@ -4,13 +4,12 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
     "client": "npm start --prefix client",
     "server": "npx nodemon server.js ",
     "dev": "concurrently \" npm run server \" \" npm run client \" ",
     "server-install": "npm install",
     "client-install": "cd client && npm install",
-    "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
+    "install-all": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "",
