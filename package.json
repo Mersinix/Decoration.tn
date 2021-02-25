@@ -4,14 +4,13 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon --watch --exec node --experimental-modules server.js",
-    "client": "npm start --prefix client",
-    "server": "npx nodemon server.js ",
-    "dev": "concurrently \" npm run server \" \" npm run client \" ",
-    "server-install": "npm install",
-    "client-install": "cd client && npm install",
-    "install-all": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+      "build": "cd client && npm install && npm run build",
+      "start": "nodemon --watch --exec node --experimental-modules server.js",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "server": "npx nodemon server",
+      "client": "npm start --prefix client",
+      "dev": "concurrently \" npm run server \" \" npm run client \""
+   
   },
   "author": "",
   "license": "ISC",
