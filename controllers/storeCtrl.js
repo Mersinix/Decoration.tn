@@ -1,6 +1,6 @@
 const storeSchema = require('../models/storeModel')
 // Require bcrypt
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 
 // Require the json web token
 const jwt = require('jsonwebtoken')

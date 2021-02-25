@@ -2,7 +2,7 @@
 const User = require('../models/User')
 
 // Require bcrypt
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 
 // Require the json web token
 const jwt = require('jsonwebtoken')
