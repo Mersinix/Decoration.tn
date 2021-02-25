@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "start": "nodemon --watch --exec node --experimental-modules server.js",
     "client": "npm start --prefix client",
     "server": "npx nodemon server.js ",
     "dev": "concurrently \" npm run server \" \" npm run client \" ",
