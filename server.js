@@ -4,6 +4,7 @@ const cors = require('cors')
 // init express
 const app = express()
 
+
 // Create Port
 const port = process.env.PORT || 5000
 // Lanch the server
@@ -11,6 +12,12 @@ app.listen(port, (error) =>
   error ? console.log(error) : console.log(`app run in port ${port}`),
 )
 
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'));
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+  });
+}
 // require conncetDB
 const connectDB = require('./config/connectDB.js')
 // connectDB
