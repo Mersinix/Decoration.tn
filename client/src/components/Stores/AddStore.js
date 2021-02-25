@@ -13,7 +13,7 @@ import {
 } from 'reactstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import { addStores } from '../../js/actions/storeActions'
-import { Redirect } from 'react-router-dom'
+import { Redirect , Link} from 'react-router-dom'
 import { getCategorys } from '../../js/actions/categoryActions'
 
 const AddStore = () => {
@@ -54,7 +54,7 @@ const AddStore = () => {
   return (
     <>
       {cancel ? (
-        <Redirect to="/Storelist" />
+        <Link to="/Storelist" />
       ) : (
         <Form style={{ margin: '100px', height:'300px' }}>
           <FormGroup>

@@ -57,9 +57,12 @@ function App() {
     )
   }
   return (
-    <BrowserRouter>
-      <AppNavbar   />
-      <div className="App">
+    
+      
+      
+        <BrowserRouter>
+        <AppNavbar   />
+        <div className="App">
         {/* <Link to="/list">
           <Button color="info">product list</Button>
         </Link>
@@ -98,6 +101,7 @@ function App() {
       {/* <Route path="/category" render={() => <CreateCategory />} /> */}
       {/* <PrivateRoute path="/Store" component={Mersini} user={user} /> */}
     </BrowserRouter>
+    
   )
 }
 

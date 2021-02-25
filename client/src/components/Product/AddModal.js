@@ -13,7 +13,7 @@ import {
 } from 'reactstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import { addProducts } from '../../js/actions/productActions'
-import { Redirect } from 'react-router-dom'
+import { Redirect , Link} from 'react-router-dom'
 import { getCategorys } from '../../js/actions/categoryActions'
 
 const AddModal = () => {
@@ -52,7 +52,7 @@ const AddModal = () => {
   return (
     <>
       {cancel ? (
-        <Redirect to="/list" />
+        <Link to="/list" />
       ) : (
         <Form style={{ margin: '100px' }}>
           <FormGroup>

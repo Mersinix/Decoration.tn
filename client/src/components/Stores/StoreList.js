@@ -4,10 +4,13 @@ import { getStores } from '../../js/actions/AllstoreActions'
 import { StoreDesignCard } from './StoreDesignCard'
 import './StoreList.css'
 
+
 const StoreList = () => {
+  
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(getStores())
+    
   }, [])
   const stor = useSelector((state) => state.AllstoreReducer.stores)
   return (

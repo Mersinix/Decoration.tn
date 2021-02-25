@@ -61,7 +61,7 @@ export const Carddesign = ({ products }) => {
   const classes = useStyles()
 
   return (
-    <BrowserRouter>
+    <>
       <Card className={classes.root} style={{ background: 'white' }}>
         <CardMedia
           image={products.images}
@@ -108,7 +108,7 @@ export const Carddesign = ({ products }) => {
           </CardActions>
         </CardActionArea>
       </Card>
-    </BrowserRouter>
+    </>
   )
 }
 
