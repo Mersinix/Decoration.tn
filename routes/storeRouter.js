@@ -1,8 +1,8 @@
-const router = require('express').Router()
+const storeRouter = require('express').Router()
 const storeCtrl = require('../controllers/storeCtrl')
 const isAuth = require('../middlewares/isAuth')
 const isAuthStore = require('../middlewares/isAuthStore');
-const authAdmin = require('../middlewares/authAdmin')
+
 
 const {
     
@@ -12,25 +12,25 @@ const {
 
 // const anyauth=(isAuthStore||authAdmin)
 
-router.route('/login')
+storeRouter.route('/login')
     .post(loginStoreRules(),validator, storeCtrl.loginStore)
 
-router.route('/store')
+storeRouter.route('/store')
     .get(validator,storeCtrl.getStore)
 
-router.route('/mystore')
+storeRouter.route('/mystore')
     .get(isAuth,isAuthStore,validator,storeCtrl.getOneStore)
     
 
-router.route('/add')
+storeRouter.route('/add')
     .post( validator, storeCtrl.createStore)
 
-router.route('/delete/:_id')
+storeRouter.route('/delete/:_id')
     .delete( validator, isAuth,isAuthStore,storeCtrl.deleteStore)
 
-router.route('/edit/:_id')
+storeRouter.route('/edit/:_id')
     .put(validator, isAuth ,isAuthStore, storeCtrl.updateStore)
 
 
 
-module.exports = router
+module.exports = storeRouter

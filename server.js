@@ -39,7 +39,7 @@ const categoryRouter=require('./routes/categoryRouter')
 // Product routes
 app.use('/api/categorys', categoryRouter)
 // require Store Router
-const StoreRouter=require('./routes/StoreRouter')
+const StoreRouter=require('./routes/storeRouter')
 // Store routes
 app.use('/api/Stores', StoreRouter)
 // require Shop Router
